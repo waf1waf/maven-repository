@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+    web:
+        build: .
+        ports:
+            - "192.168.0.50:80:80"
+        volumes:
+            - /opt/m2:/usr/local/apache2/htdocs
+        hostname: maven.codechainsaw.com
